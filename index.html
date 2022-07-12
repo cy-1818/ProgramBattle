@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>対人</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div><input type="button"value="Restart" onclick="start()" style="background-color:red;color:white"/><input type="button"value="stop" onclick="clearInterval(jsid)" style="background-color:blue;color:white"/><input type="button"value="start" onclick="jsid=setInterval(js,40);" style="background-color:green;color:white"/></div>
+ <div> <canvas width="1000" height="500" style="width:100%" id="canvas" /></div>
+<div style="-webkit-text-stroke:0.2px black;text-stroke: 0.2px black;height:500px;font-family:sans-serif;font-size:2em;"><p style="height:500px;display:inline-block;overflow:scroll;width:50%;color:red" id="redHP"></p><p style="height:500px;display:inline-block;overflow:scroll;width:50%;color:blue" id="blueHP"></p></div>
+<textarea style="width:49%;height:2000px;display:inline-block;margin:0;padding:0;" id="t1"></textarea>
+<textarea style="width:49%;height:2000px;display:inline-block;margin:0;padding:0;" id="t2"></textarea>
+  <script src="main.js"></script>
+</body>
+</html>

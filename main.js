@@ -22,7 +22,7 @@ function whatThere(x,y,self){
  if(self){
   var ans=self;
  }else{
-  console.log("write self name");
+  //console.log("write self name");
   var ans=null;
  }
  for(var n in objects){
@@ -252,7 +252,7 @@ bomb = function(power,time){
      this.size=(Date.now()-this.time)/10;
      this.color="hsla(36,100%,"+(100-(this.hp/this.mp)*50)+"%,"+((this.hp/this.mp))+")";
      this.hp-=2000;
-     last="";
+     last=null;
      for(var n=0;n<this.size*2*Math.PI;n++){
       thing=whatThere((1+this.size)*Math.cos(n)+this.x,(1+this.size)*Math.sin(n)+this.y);
       if(last!==null&&thing===null&&last.split(":")[0]!="bomb"){
